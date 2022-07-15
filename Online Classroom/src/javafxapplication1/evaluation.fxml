@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #eceadd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutY="85.0" prefHeight="514.0" prefWidth="750.0" style="-fx-background-color: #eceadd;">
+         <children>
+            <Button fx:id="maths" alignment="BOTTOM_CENTER" layoutX="37.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c343d;" text="Maths" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></Button>
+            <Button fx:id="english" alignment="BOTTOM_CENTER" layoutX="275.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c343d;" text="English" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></Button>
+            <Button fx:id="science" alignment="BOTTOM_CENTER" layoutX="511.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c343d;" text="Science" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></Button>
+            <Button fx:id="hindi" alignment="BOTTOM_CENTER" layoutX="37.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c343d;" text="Hindi" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></Button>
+            <Button fx:id="ssc" alignment="BOTTOM_CENTER" layoutX="275.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c343d;" text="Social Studies" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Button>
+            <Button fx:id="computer" alignment="BOTTOM_CENTER" layoutX="511.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c343d;" text="Computer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></Button>
+            <ImageView fitHeight="90.0" fitWidth="89.0" layoutX="93.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@maths.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="103.0" layoutX="324.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@english.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="567.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@science.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="119.0" layoutX="78.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hindi.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="103.0" layoutX="330.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ssc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="567.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@computer.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" prefHeight="87.0" prefWidth="765.0" style="-fx-background-color: #bebec2;">
+         <children>
+            <Text fill="#0c343d" layoutX="293.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font></Text>
+            <Line endX="633.5999755859375" endY="2.2000045776367188" layoutX="126.0" layoutY="92.0" startX="-123.00000762939453" startY="2.2000045776367188" strokeWidth="10.0" />
+            <Button fx:id="back" layoutX="26.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #0c343d;" textFill="WHITE" />
+            <Text fill="WHITE" layoutX="38.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="51.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="671.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@student.jpeg" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="logout" layoutX="671.0" layoutY="13.0" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="60.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

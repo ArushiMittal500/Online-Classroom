@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #bebec2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.2512025654730091" layoutY="81.0" prefHeight="519.0" prefWidth="750.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="518.0" prefWidth="186.0" style="-fx-background-color: #bebec;">
+               <children>
+                  <AnchorPane layoutX="-1.0" layoutY="14.0" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #0c343d;" AnchorPane.bottomAnchor="434.0">
+                     <children>
+                        <Hyperlink fx:id="h1" alignment="CENTER" layoutY="13.0" onAction="#h1c" prefHeight="74.0" prefWidth="191.0" text="Hindi" textFill="WHITE" AnchorPane.bottomAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="96.0" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #0c343d;">
+                     <children>
+                        <Hyperlink fx:id="h2" alignment="CENTER" layoutX="54.0" layoutY="13.0" onAction="#h2c" prefHeight="42.0" prefWidth="77.0" text="English" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="181.0" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #0c343d;">
+                     <children>
+                        <Hyperlink fx:id="h3" alignment="CENTER" layoutX="-1.0" onAction="#h3c" prefHeight="71.0" prefWidth="187.0" text="Maths" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="265.0" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #0c343d;">
+                     <children>
+                        <Hyperlink fx:id="h4" alignment="CENTER" layoutX="1.0" onAction="#h4c" prefHeight="71.0" prefWidth="185.0" text="Computer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="348.0" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #0c343d;">
+                     <children>
+                        <Hyperlink fx:id="h5" alignment="CENTER" layoutX="1.0" onAction="#h5c" prefHeight="71.0" prefWidth="186.0" text="S.Sc." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="434.0" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #0c343d;">
+                     <children>
+                        <Hyperlink fx:id="h6" alignment="CENTER" onAction="#h6c" prefHeight="71.0" prefWidth="188.0" text="Science" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.09876065065840434" layoutX="-1.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="518.0" prefWidth="558.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="62.0" prefWidth="557.0">
+                           <children>
+                              <Text fill="#0c343d" layoutX="194.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendence">
+                                 <font>
+                                    <Font name="System Bold" size="31.0" />
+                                 </font>
+                              </Text>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="452.0" prefWidth="557.0" style="-fx-background-color: #bebec2;">
+                           <children>
+                              <TextField fx:id="classAtt" layoutX="54.0" layoutY="92.0" onAction="#att" prefHeight="33.0" prefWidth="156.0" />
+                              <TextField fx:id="totalAtt" layoutX="339.0" layoutY="99.0" onAction="#att" prefHeight="33.0" prefWidth="156.0" />
+                              <Button fx:id="attBtn" layoutX="217.0" layoutY="223.0" mnemonicParsing="false" onAction="#att" prefHeight="42.0" prefWidth="122.0" style="-fx-background-color: #0c343d;" text="SUBMIT" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                              <Label fx:id="lab" alignment="CENTER" layoutX="55.0" layoutY="360.0" prefHeight="42.0" prefWidth="429.0" textFill="#0c343d">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                              <Text fill="#0c343d" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of classes attended">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Text>
+                              <Text fill="#0c343d" layoutX="296.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of classes">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Text>
+                              <Button layoutX="106.0" layoutY="312.0" mnemonicParsing="false" text="Button" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Text fill="#0c343d" layoutX="283.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Text>
+      <Button fx:id="back" layoutX="42.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #0c343d;" text="Button" />
+      <Text fill="WHITE" layoutX="54.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;" wrappingWidth="36.1083984375">
+         <font>
+            <Font name="System Bold Italic" size="51.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="663.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@student.jpeg" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="logout" layoutX="664.0" layoutY="14.0" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="59.0" />
+   </children>
+</AnchorPane>

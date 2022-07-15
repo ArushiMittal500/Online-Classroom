@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #eceadd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.14214046822742474" orientation="VERTICAL" prefHeight="600.0" prefWidth="750.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="237.0" prefWidth="749.0" style="-fx-background-color: #bebec2;">
+               <children>
+                  <Text fill="#0c343d" layoutX="319.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INDEX">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font></Text>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="662.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="662.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@student.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="logout" layoutX="663.0" layoutY="22.0" onAction="#handleButtonAction" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="660.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="10.0" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #eceadd;">
+               <children>
+                  <Button fx:id="dashboard" alignment="BOTTOM_CENTER" layoutX="24.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="210.0" prefWidth="210.0" style="-fx-background-color: #0c343d;" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font></Button>
+                  <Button fx:id="evaluation" alignment="BOTTOM_CENTER" layoutX="269.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="210.0" prefWidth="210.0" style="-fx-background-color: #0c343d;" text="Evaluation" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font></Button>
+                  <Button fx:id="content" alignment="BOTTOM_CENTER" layoutX="512.0" layoutY="114.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="210.0" prefWidth="210.0" style="-fx-background-color: #0c343d;" text="Course Content" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font></Button>
+                  <ImageView fitHeight="91.0" fitWidth="109.0" layoutX="75.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dashboard.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="82.0" fitWidth="78.0" layoutX="332.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@evaluation.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="68.0" fitWidth="149.0" layoutX="543.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@course%20content.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

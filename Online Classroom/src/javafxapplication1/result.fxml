@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="743.0" style="-fx-background-color: #bebec2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.EvaluationSubController">
+   <children>
+      <SplitPane dividerPositions="0.2792768483540205" layoutY="80.0" prefHeight="513.0" prefWidth="743.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="189.0" style="-fx-background-color: #0c343d;">
+               <children>
+                  <Button fx:id="exam" layoutX="7.0" mnemonicParsing="false" onAction="#subjectbuttonaction" prefHeight="95.0" prefWidth="175.0" style="-fx-background-color: #0c343d;" text="Exam/Projects" textFill="WHITE" AnchorPane.bottomAnchor="386.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="result" layoutY="125.0" mnemonicParsing="false" onAction="#subjectbuttonaction" prefHeight="95.0" prefWidth="175.0" style="-fx-background-color: #bebec2;" text="Result" textFill="#101011" underline="true" AnchorPane.bottomAnchor="291.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="259.0" style="-fx-background-color: #bebec2;">
+               <children>
+                  <Text fill="#0c343d" layoutX="24.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Test-1" wrappingWidth="110.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c343d" layoutX="24.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Test-2" wrappingWidth="110.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c343d" layoutX="24.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Test-3" wrappingWidth="110.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c343d" layoutX="24.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Test-4" wrappingWidth="110.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="ut1" layoutX="170.0" layoutY="29.0" onAction="#evalBtn" prefHeight="27.0" prefWidth="268.0" promptText="Out of 10" />
+                  <TextField fx:id="ut2" layoutX="170.0" layoutY="70.0" onAction="#evalBtn" prefHeight="31.0" prefWidth="268.0" promptText="Out of 10" />
+                  <TextField fx:id="ut3" layoutX="170.0" layoutY="114.0" onAction="#evalBtn" prefHeight="26.0" prefWidth="268.0" promptText="Out of 10" />
+                  <TextField fx:id="ut4" layoutX="170.0" layoutY="160.0" onAction="#evalBtn" prefHeight="26.0" prefWidth="268.0" promptText="Out of 10" />
+                  <Text fill="#0c343d" layoutX="24.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submittive Assessment 1" wrappingWidth="132.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c343d" layoutX="24.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submittive Assessment 2" wrappingWidth="132.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="sa1" layoutX="170.0" layoutY="216.0" onAction="#evalBtn" prefHeight="16.0" prefWidth="268.0" promptText="Out of 30" />
+                  <Button fx:id="evalBtn" layoutX="196.0" layoutY="368.0" mnemonicParsing="false" onAction="#evalBtn" prefHeight="40.0" prefWidth="138.0" style="-fx-background-color: #0c343d;" text="CALCULATE" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <TextField fx:id="sa2" layoutX="170.0" layoutY="287.0" onAction="#evalBtn" prefHeight="25.0" prefWidth="268.0" promptText="Out of 30" />
+                  <Label fx:id="lab" alignment="CENTER" layoutX="32.0" layoutY="447.0" prefHeight="27.0" prefWidth="466.0" textFill="#0c343d">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Label>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Text fill="#0c343d" fontSmoothingType="LCD" layoutX="295.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation" underline="true" wrappingWidth="226.13671875">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#subjectbuttonaction" prefHeight="37.0" prefWidth="60.0" style="-fx-background-color: #0c343d;">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="24.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;" wrappingWidth="39.13671875">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="655.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@student.jpeg" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="logout" layoutX="655.0" layoutY="10.0" onAction="#subjectbuttonaction" prefHeight="60.0" prefWidth="60.0" />
+   </children>
+</AnchorPane>
